@@ -159,7 +159,7 @@ install:
 
   # Create and start emulator
   
-  - cd $SDK/tools; 
+  - cd ${ANDROID_HOME}/tools; 
   - ln -s emulator64-x86 emulator-x86
 
   - echo no | avdmanager create avd -n acib -k "$EMULATOR" -f --abi "$ABI" --tag "$TAG"
