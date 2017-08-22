@@ -158,6 +158,9 @@ install:
   - echo yes | sdkmanager "$EMULATOR" # Install emulator system image
 
   # Create and start emulator
+  
+  - cd $SDK/tools; 
+  - ln -s emulator64-x86 emulator-x86
 
   - echo no | avdmanager create avd -n acib -k "$EMULATOR" -f --abi "$ABI" --tag "$TAG"
 
