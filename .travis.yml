@@ -1,9 +1,11 @@
 language: android
 android:
   components:
-    - build-tools-20.0.0
+    - tools
+    - build-tools-24.0.3
+    - platform-tools
+    - android-25
     - android-L
-    - sys-img-armeabi-v7a-android-tv-l
     - add-on
     - extra
   licenses:
